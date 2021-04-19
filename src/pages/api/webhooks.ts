@@ -66,7 +66,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
               checkoutSession.customer.toString(),
               true
             )
-
+            console.log('cadastrou!')
             break;
           default:
             throw new Error('Unhandled event.')
