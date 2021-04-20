@@ -4,7 +4,7 @@
 
 <h1>ig.news</h1>
 <p>
-  Aplicação desenvolvida com NextJs com intuito de criação de postagens para usuários que assinarem o plano mensal. Usuários que não são assinantes conseguem ver uma prévia da postagem. Stripe sendo usado como Gateway de pagamento, Prismic CMS para usuários usarem o Dasboard para publicarem suas postagens. FaunaDB para o registro de usuários e inscrições e autenticação via conta do Github.
+  Aplicação desenvolvida com NextJs com intuito de criação de postagens para usuários que assinarem o plano mensal. Usuários que não são assinantes conseguem ver uma prévia da postagem. Stripe sendo usado como Gateway de pagamento, Prismic CMS para usuários usarem o Dashboard para publicarem suas postagens. FaunaDB para o registro de usuários e inscrições e autenticação via conta do Github.
 </p>
 <p>
   No desenvolvimento foram usadas as melhores funcionalidades do NextJS, como criação de páginas com SSR (Server Side Rendering) e com SSG (Static Site Generation)
