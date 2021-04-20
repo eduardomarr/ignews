@@ -4,8 +4,13 @@
 
 <h1>Ignews</h1>
 <p>
-  Aplicação desenvolvida com NextJs com intuito de criação de postagens para usuários que assinarem o plano mensal. Usuários que não são assinantes conseguem ver uma prévia da postagem. Stripe sendo usado como Gateway de pagamento, Prismic CMS para usuários usarem o Dasboard para publicarem suas postagens. FaunaDB para o registro de usuários e inscrições e autenticação via conta do Github. <br />
-  Aplicação criada com fins didáticos, junto a Rocketseat💜, no bootcamp de ReactJs Ignite 🚀
+  Aplicação desenvolvida com NextJs com intuito de criação de postagens para usuários que assinarem o plano mensal. Usuários que não são assinantes conseguem ver uma prévia da postagem. Stripe sendo usado como Gateway de pagamento, Prismic CMS para usuários usarem o Dasboard para publicarem suas postagens. FaunaDB para o registro de usuários e inscrições e autenticação via conta do Github.
+</p>
+<p>
+  No desenvolvimento foram usadas as melhores funcionalidades do NextJS, como criação de páginas com SSR (Server Side Rendering) e com SSG (Static Site Generation)
+</p>
+<p>
+  Aplicação criada com fins didáticos, junto a Rocketseat 💜, no bootcamp de ReactJs Ignite 🚀
 </p>
 
 <h2>Tecnologias</h2>
