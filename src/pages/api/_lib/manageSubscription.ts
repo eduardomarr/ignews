@@ -1,12 +1,11 @@
-import { query as q } from 'faunadb'
-
+import { query as q } from 'faunadb';
 import { fauna } from "../../../services/fauna";
 import { stripe } from '../../../services/stripe';
 
 export async function saveSubscription(
   subscriptionId: string,
   customerId: string,
-  createAction: boolean
+  createAction = false 
 ) {
   const userRef = await fauna.query(
     q.Select(
@@ -18,9 +17,9 @@ export async function saveSubscription(
         )
       )
     )
-  )
+  );
 
-  const subscription = await stripe.subscriptions.retrieve(subscriptionId)
+  const subscription = await stripe.subscriptions.retrieve(subscriptionId);
 
   const subscriptionData = {
     id: subscription.id,
@@ -29,13 +28,13 @@ export async function saveSubscription(
     price_id: subscription.items.data[0].price.id,
   }
 
-  if (createAction) {
+  if(createAction){
     await fauna.query(
       q.Create(
         q.Collection('subscriptions'),
         { data: subscriptionData }
       )
-    )
+    );
   } else {
     await fauna.query(
       q.Replace(
